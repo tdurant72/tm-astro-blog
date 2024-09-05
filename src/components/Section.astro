@@ -1,0 +1,11 @@
+---
+const { id } = Astro.props;
+
+interface Props {
+  id?: string;
+}
+---
+
+<section id={id} class="container mx-auto max-w-screen-xl mt-10 px-8">
+  <slot />
+</section>
